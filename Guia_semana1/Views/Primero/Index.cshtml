@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<script>
+
+
+ let paresalerta = prompt(`Indicar cantida de numeros a evaluar, el resultado se muestra por la consola del navegador`);
+
+let pares = [''];
+
+if (paresalerta == null || paresalerta == '') {
+
+  alert('Debes introducir un valor');
+}
+let cantIm =0;
+let cantPar = 0;
+
+for (let i = 0; i <= paresalerta; i++) {
+  if (i % 2 == 0) {
+    console.log(i+" par");
+    cantPar++;
+  }
+    if (i % 2 != 0) {
+    console.log(i+" impar");
+    cantIm++;
+  }
+}
+console.log("Total pares: "+ cantPar);
+
+console.log("Total inpares: "+ cantIm);
+</script>

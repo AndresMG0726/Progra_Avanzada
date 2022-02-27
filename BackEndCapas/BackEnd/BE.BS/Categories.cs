@@ -44,6 +44,7 @@ namespace BE.BS
         public void Inset(data.Categories t)
         {
             _dal.Inset(t);
+            
         }
 
         public void Update(data.Categories t)

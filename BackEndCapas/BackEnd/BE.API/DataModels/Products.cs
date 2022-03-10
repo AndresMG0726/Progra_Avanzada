@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BE.DAL.DO.Objetos
+namespace BE.API.DataModels
 {
-    public partial class Products
+    public class Products
     {
         public Products()
         {
-           //OrderDetails = new HashSet<OrderDetails>();
+            // OrderDetails = new HashSet<OrderDetails>();
         }
 
         public int ProductId { get; set; }
@@ -24,7 +22,8 @@ namespace BE.DAL.DO.Objetos
         public DateTime? DateDiscontinued { get; set; }
 
         public virtual Categories Category { get; set; }
-      //  public virtual Suppliers Supplier { get; set; }
-      //  public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+        //  public virtual Suppliers Supplier { get; set; }
+        //  public virtual ICollection<OrderDetails> OrderDetails { get; set; }
     }
+
 }

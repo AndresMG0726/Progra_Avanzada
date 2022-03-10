@@ -48,7 +48,7 @@ namespace BE.BS
 
         public void Update(data.Products t)
         {
-            _dal.Inset(t);
+            _dal.Update(t);
         }
     }
 }

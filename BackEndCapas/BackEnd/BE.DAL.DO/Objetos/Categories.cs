@@ -11,7 +11,7 @@ namespace BE.DAL.DO.Objetos
     {
         public Categories()
         {
-            //Products = new HashSet<Products>();
+            Products = new HashSet<Products>();
         }
 
         public int CategoryId { get; set; }
@@ -19,6 +19,6 @@ namespace BE.DAL.DO.Objetos
         public string Description { get; set; }
         public byte[] Picture { get; set; }
 
-        //public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<Products> Products { get; set; }
     }
 }
